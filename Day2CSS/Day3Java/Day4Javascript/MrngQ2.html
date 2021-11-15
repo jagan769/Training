@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+<title>SI</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <br>
+    <div id="div1"></div>
+    <br>
+    <div id="div2"></div>
+    <script>
+    function interest1(p,t,r) 
+{
+    return p*t*r/100;
+}
+
+let s=interest1(1000,4,10);
+let p=1000;
+let s1=`Simple Interest is ${s} and Principle interest is ${p}`;
+
+document.getElementById("div1").innerHTML= "The Simple Interest is"+" "+s;
+document.getElementById("div2").innerHTML=s1;
+
+</script>
+</body>
+</html>

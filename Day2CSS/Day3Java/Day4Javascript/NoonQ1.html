@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+  <title>noon</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+<section>
+    <h1 id="n3"></h1>
+    <h1 id="c1"></h1>
+    <h1 id="c2"></h1>
+    <h1 id="c3"></h1>
+    <h1 id="c4"></h1>
+</section>
+
+<script>
+let r=Math.floor(Math.random()*10);
+document.getElementById("n3").innerHTML=r;
+let pt=Math.pow(3,4);
+document.getElementById("c1").innerHTML=pt;
+let sq=Math.sqrt(144);
+document.getElementById("c2").innerHTML=sq;
+
+let age=20;
+let vote=(age>=18) ? "Eligible" : "Not Eligible";
+document.getElementById("c3").innerHTML=vote;
+
+function decisionMake() {
+let time=29;
+let msg="";
+if(time<=10){
+    msg="GoodMorning";
+}
+else if(time<=15){
+    msg="GoodAfternoon";
+}
+else if(time<=19){
+    msg="GoodEvening";
+}
+else{
+    msg="GoodNight";
+}
+return msg;
+}
+let x=decisionMake();
+document.getElementById("c4").innerText=x;
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Javascript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <h1 id="abc"></h1>
+        <button onclick="window.print( )">print this page</button>
+      <script>
+        const employee= {empid:134,empname:"Raj",desg:"Engineer",empdetails:function()
+        {
+          return this.empid+" Name "+ this.empname+" Role "+this.desg;
+        }
+      }
+
+      let data= employee.empdetails();
+      document.getElementById("abc").innerText=data;
+      </script>
+    </body>
+</html>
